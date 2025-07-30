@@ -1,3 +1,3 @@
 # Happy Thoughts
 
-sharehappythoughts.netlify.app
+https://sharehappythoughts.netlify.app
