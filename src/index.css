@@ -95,6 +95,9 @@ code {
 }
 
 .heart-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   width: 35px;
   height: 35px;
