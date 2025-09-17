@@ -12,7 +12,7 @@ export const Thoughts = () => {
     const fetchThoughts = () => {
         setLoading(true);
 
-        fetch ("https://happy-thoughts-api-4ful.onrender.com/thoughts")
+        fetch ("https://technigo-project-happy-thoughts-api-u2n1.onrender.com/thoughts")
         .then (res => res.json())
         .then((json) => {
             setThoughtList(json);
@@ -51,7 +51,7 @@ export const Thoughts = () => {
             return;
         }
 
-        fetch ("https://happy-thoughts-api-4ful.onrender.com/thoughts", {
+        fetch ("https://technigo-project-happy-thoughts-api-u2n1.onrender.com/thoughts", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ 
@@ -81,7 +81,7 @@ export const Thoughts = () => {
     }
     
     const handleLike = (thoughtId) => {
-        fetch(`https://happy-thoughts-api-4ful.onrender.com/thoughts/${thoughtId}/like`, {
+        fetch(`https://technigo-project-happy-thoughts-api-u2n1.onrender.com/thoughts/:thoughtId/like`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
         })
