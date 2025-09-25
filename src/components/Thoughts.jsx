@@ -81,7 +81,7 @@ export const Thoughts = () => {
     }
     
     const handleLike = (thoughtId) => {
-        fetch(`https://technigo-project-happy-thoughts-api-u2n1.onrender.com/thoughts/:thoughtId/like`, {
+        fetch("https://technigo-project-happy-thoughts-api-u2n1.onrender.com/thoughts/:thoughtId/like", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
         })
